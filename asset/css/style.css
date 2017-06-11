@@ -1,6 +1,8 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	outline: 0!important;
 }
 .clear	{
 	clear: both;
@@ -109,28 +111,46 @@ a span i{
 	width: 150px;
 	margin: 50px auto;
 }
-.s-c-one h1, .s-c-one p{
+.s-content{
+	margin-left: 20%;
+}
+.s-c-one{
+	position: relative;
+}
+.s-c-one .c-o-kiri, .s-c-two .c-o-kiri, .s-c-three .c-o-kiri, .s-c-four .c-o-kiri, .s-c-five .c-o-kiri{
+	z-index: 2;
+	position: relative;
 	border: solid 1px transparent;
 	background-color: #000;
 	color: #fff;
 	text-align: center;
-	width: 350px;
-	height: 350px;
+	width: 390px;
+	height: 390px;
+	padding-top: 190px;
 	float: left;
-} 
-.s-c-one p{
-	position: absolute;
-	z-index: -1;
+	transition: all .8s cubic-bezier(.77,0,.175,1);
+}
+.s-c-two .c-o-kiri,
+.s-c-four .c-o-kiri,
+.s-c-two .c-o-kanan,
+.s-c-four .c-o-kanan{
+	left: 390px;
+}
+.s-c-one .c-o-kanan, .s-c-two .c-o-kanan, .s-c-three .c-o-kanan, .s-c-four .c-o-kanan, .s-c-five .c-o-kanan{	
+	display: block;
+	position: relative;
 	border: solid 1px transparent;
 	background-color: #0f0f0f;
 	color: #fff;
 	text-align: center;
-	width: 350px;
-	height: 350px;
+	width: 390px;
+	height: 390px;
+	padding-top: 190px;
 	float: left;
-}
-.s-c-one p:hover{
+	transition: .6s cubic-bezier(.165,.84,.44,1);
 	z-index: 1;
-	position: relative;
-	margin-left: 100%;
+}
+.ds-two{
+	width: 50%;
+	float: left;
 }
